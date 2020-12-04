@@ -1,3 +1,4 @@
+import 'package:animation_demo/custom_animation/screen_1.dart';
 import 'package:animation_demo/details.dart';
 import 'package:flutter/material.dart';
 import 'List/list_animation.dart';
@@ -42,7 +43,8 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {
               Navigator.push(context, MaterialPageRoute(
                   builder: (_) {
-                    return CustomHeroAnimation();
+                    return Screen_1();
+                      // CustomHeroAnimation();
                   }
               ));
             },

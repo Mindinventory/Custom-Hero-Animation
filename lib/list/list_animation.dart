@@ -74,49 +74,31 @@ class _ListAnimationState  extends State<ListAnimation> {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                // Navigator.of(context).push(MaterialPageRoute(
-                //     builder: (context) => ListDetailsAnimation(
-                //       index: index,
-                //       image: images[index],
-                //       desc: 'The ${titles[index]} is awesome place. if you feel that you need to gop for the vacation.',
-                //       name: titles[index],
-                //     )));
-
-                Navigator.push(
-                    context,
-                    PageRouteBuilder(
-                      transitionDuration: Duration(milliseconds:900),
-                      pageBuilder: (_, __, ___) => ListDetailsAnimation(
+                Navigator.push(context, PageRouteBuilder(
+                    transitionDuration: Duration(milliseconds: 1000),
+                    pageBuilder: (BuildContext context,
+                        Animation<double> animation,
+                        Animation<double> secondaryAnimation) {
+                      return ListDetailsAnimation(
                         index: index,
                         image: images[index],
                         desc: 'The ${titles[index]} is awesome place. if you feel that you need to gop for the vacation.',
                         name: titles[index],
-                      ),
-                    ));
-
-                // Navigator.of(context).push(
-                //   PageRouteBuilder(
-                //     transitionDuration: Duration(milliseconds: 1000),
-                //     pageBuilder: (
-                //         BuildContext context,
-                //         Animation<double> animation,
-                //         Animation<double> secondaryAnimation) {
-                //       return ListDetailsAnimation();
-                //     },
-                //     transitionsBuilder: (
-                //         BuildContext context,
-                //         Animation<double> animation,
-                //         Animation<double> secondaryAnimation,
-                //         Widget child) {
-                //       return Align(
-                //         child: FadeTransition(
-                //           opacity: animation,
-                //           child: child,
-                //         ),
-                //       );
-                //     },
-                //   ),
-                // );
+                      );
+                    },
+                    transitionsBuilder: (BuildContext context,
+                        Animation<double> animation,
+                        Animation<double> secondaryAnimation,
+                        Widget child) {
+                      return Align(
+                        child: FadeTransition(
+                          opacity: animation,
+                          child: child,
+                        ),
+                      );
+                    }
+                ),
+                );
               },
               child: Hero(
                 tag: 'img' + index.toString(),

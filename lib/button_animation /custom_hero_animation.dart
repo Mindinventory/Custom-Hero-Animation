@@ -16,7 +16,7 @@ class _CustomHeroAnimationState extends State<CustomHeroAnimation> {
   Widget build(BuildContext context) {
     timeDilation = 3.0;
     return MaterialApp(
-      title: 'Customize Hero Animation Demo',
+      title: 'Customize Hero Animation',
       home: Screen1(),
     );
   }

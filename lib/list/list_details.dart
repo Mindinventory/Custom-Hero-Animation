@@ -10,8 +10,6 @@ class ListDetailsAnimation extends StatefulWidget {
   String name;
   String desc;
   ListDetailsAnimation({this.index, this.image, this.desc, this.name});
-  
-  
 
   @override
   _ListDetailsAnimationState createState() => _ListDetailsAnimationState(index: index, image: image, desc: desc, name: name);
@@ -62,7 +60,7 @@ class _ListDetailsAnimationState  extends State<ListDetailsAnimation> {
                       Navigator.pop(context);
                     },
                     child: Padding(
-                      padding: const EdgeInsets.fromLTRB(15, 25, 15, 15),
+                      padding: const EdgeInsets.fromLTRB(15, 35, 15, 15),
                       child: Container(
                         height: 50,
                         width: 50,

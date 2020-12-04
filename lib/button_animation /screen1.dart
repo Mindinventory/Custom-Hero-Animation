@@ -87,7 +87,6 @@ class _BuyButtonState  extends State<BuyButton> with TickerProviderStateMixin {
         },
         child: Hero(
           tag: 'customAnimation',
-
           // for circle shape
           flightShuttleBuilder: (
               BuildContext flightContext,
@@ -123,7 +122,6 @@ class _BuyButtonState  extends State<BuyButton> with TickerProviderStateMixin {
           ),
         ),
       ),
-
     );
   }
 
