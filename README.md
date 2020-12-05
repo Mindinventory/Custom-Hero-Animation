@@ -4,9 +4,6 @@ A new Flutter application that Flies a widget using Hero Animation.
 
 Read Mope Here: 
 
-# Perview 
-
-
 # Description
 In the flutter Hero Animation, we have list of Hotels images, names & its brife description and that list will animate with Hero animation to jump to the details view. In the details view, we have the all details data of like Hotels images, names & its description.
 
