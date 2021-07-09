@@ -1,17 +1,23 @@
-# Hero Animation
+# Custom Hero Animations
 
-A new Flutter application that Flies a widget using Hero Animation.
-
-Read Mope Here: 
-
-# Description
-In the flutter Hero Animation, we have list of Hotels images, names & its brife description and that list will animate with Hero animation to jump to the details view. In the details view, we have the all details data of like Hotels images, names & its description.
-
-The onther one is custom aniantion with Button action will redirate with Hero animation to jump to the screen 2.
-
-Also covers basic properties of Hero animation.
+Samples of Animation using HeroWidget.
 
 ![hero_animation](https://user-images.githubusercontent.com/48902424/125037632-048bbf80-e0b2-11eb-9957-c66ae67b5637.gif)
 
-# Conclusion 
-I hope this article has cleared up some of the major question marks regrading to the Hero aniamtion. I’ll keep digging, and will report all of my new findings.
+# Description
+In first flutter sample, we have list of food items with image, name & þrofie description and that list will animate with Hero animation while jumping to the details view. We have implemented custom transition which slides container to edge of screen and then animate it to respective position in details screen.
+
+The onther sample shows custom aniantion with Button click, Which will redirate with Hero animation to jump to the screen 2.
+It also covers basic properties of Hero animation.
+
+# Blog Post
+Here is blog post that explains All things related to HeroWidget
+https://link.medium.com/EhmF1jMoKhb 
+
+# LICENSE!
+
+Custom Hero Animation is [MIT-licensed](/LICENSE).
+
+# Let us know!
+We’d be really happy if you send us links to your projects where you use our component. Just send an email to sales@mindinventory.com and do let us know if you have any questions or suggestion regarding our work.
+
