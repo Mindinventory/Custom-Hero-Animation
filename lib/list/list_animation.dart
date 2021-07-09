@@ -32,7 +32,7 @@ class _ListAnimationState  extends State<ListAnimation> {
     'The Westin Excelsior',
     'Burj Al Arab',
     'The Plaza',
-    'Atlantis Paradise Island',
+    'Atlantis Paradise',
     'Palms',
     'The Boulders',
     'CuisinArt Golf',
@@ -79,24 +79,29 @@ class _ListAnimationState  extends State<ListAnimation> {
                     pageBuilder: (BuildContext context,
                         Animation<double> animation,
                         Animation<double> secondaryAnimation) {
-                      return ListDetailsAnimation(
-                        index: index,
-                        image: images[index],
-                        desc: 'The ${titles[index]} is awesome place. if you feel that you need to gop for the vacation.',
-                        name: titles[index],
+                      return AnimatedBuilder(
+                      animation: animation,
+                      builder: (BuildContext context, Widget child) {
+                        return ListDetailsAnimation(
+                          index: index,
+                          image: images[index],
+                          desc: 'The ${titles[index]} is awesome place. if you feel that you need to gop for the vacation.',
+                          name: titles[index],
+                        );
+                      }
                       );
                     },
-                    transitionsBuilder: (BuildContext context,
-                        Animation<double> animation,
-                        Animation<double> secondaryAnimation,
-                        Widget child) {
-                      return Align(
-                        child: FadeTransition(
-                          opacity: animation,
-                          child: child,
-                        ),
-                      );
-                    }
+                    // transitionsBuilder: (BuildContext context,
+                    //     Animation<double> animation,
+                    //     Animation<double> secondaryAnimation,
+                    //     Widget child) {
+                    //   return Align(
+                    //     child: FadeTransition(
+                    //       opacity: animation,
+                    //       child: child,
+                    //     ),
+                    //   );
+                    // }
                 ),
                 );
               },
@@ -128,8 +133,7 @@ class _ListAnimationState  extends State<ListAnimation> {
                                   child: Container(
                                     width: double.maxFinite,
                                     height: 100.0,
-                                    child:
-                                    Image(
+                                    child: Image(
                                       image: AssetImage(images[index]),
                                       fit: BoxFit.fill,
                                     ),
@@ -157,14 +161,16 @@ class _ListAnimationState  extends State<ListAnimation> {
                                         ),
                                       ),
                                     ),
-                                    SizedBox(height: 10,),
-                                    Text(
-                                      'The ${titles[index]} is awesome place. if you feel that you need to gop for the vacation.',
-                                      style: TextStyle(
-                                        color: Color.fromRGBO(139, 139, 139, 1),
-                                        fontSize: 15.0,
-                                        fontFamily: 'ProximaNova',
-                                        fontWeight: FontWeight.normal,
+                                    SizedBox(height: 5,),
+                                    Expanded(
+                                      child: Text(
+                                        'The ${titles[index]} is awesome place. if you feel that you need to gop for the vacation.',
+                                        style: TextStyle(
+                                          color: Color.fromRGBO(139, 139, 139, 1),
+                                          fontSize: 15.0,
+                                          fontFamily: 'ProximaNova',
+                                          fontWeight: FontWeight.normal,
+                                        ),
                                       ),
                                     )
                                   ],

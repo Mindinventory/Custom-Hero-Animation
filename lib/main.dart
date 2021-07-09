@@ -1,5 +1,6 @@
 import 'package:animation_demo/custom_animation/screen_1.dart';
 import 'package:animation_demo/details.dart';
+import 'package:animation_demo/radial_animation/food_main_List.dart';
 import 'package:flutter/material.dart';
 import 'List/list_animation.dart';
 import 'button_animation /custom_hero_animation.dart';
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ListAnimation(),
+      home:
+      // RadialExpansionDemo(),
+      // ListAnimation(),
+        FoodMenuMain(),
     );
   }
 }
