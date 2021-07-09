@@ -12,6 +12,7 @@ It also covers basic properties of Hero animation.
 
 # Blog Post
 Here is blog post that explains All things related to HeroWidget
+
 https://link.medium.com/EhmF1jMoKhb 
 
 # LICENSE!
