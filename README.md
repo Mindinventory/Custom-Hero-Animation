@@ -11,5 +11,7 @@ The onther one is custom aniantion with Button action will redirate with Hero an
 
 Also covers basic properties of Hero animation.
 
+![hero_animation](https://user-images.githubusercontent.com/48902424/125037632-048bbf80-e0b2-11eb-9957-c66ae67b5637.gif)
+
 # Conclusion 
 I hope this article has cleared up some of the major question marks regrading to the Hero aniamtion. I’ll keep digging, and will report all of my new findings.
